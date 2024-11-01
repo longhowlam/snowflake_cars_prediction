@@ -31,9 +31,16 @@ Now that we have a database, we can populate it with tables, one way is to uploa
 3. Click on the "Tables" section and create a new table to hold the car prices data.
 4. Use the "Load Data" option to upload the `car_prices.csv` file.
 
-Here is a screenshot of the upload process:
+Here are some screenshot of the upload process:
 
 ![Upload Data](upload_data.png)
 
+![Upload Data](upload_data_2.png)
 
-Now upload the car_prices.csv data set to this database
+![Upload Data](upload_data_3.png)
+
+
+
+## Notebook
+
+
