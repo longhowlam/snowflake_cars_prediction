@@ -51,15 +51,15 @@ We can now upload the carprice_prediction_snowflake_notebook in this repository 
 1. Click + Create
 2. Select Notebookk > Import *.ipynb file 
 
-<img src="createnotebook.png" alt="Upload Data" width="400"/>
+<img src="createnotebook.png" alt="Upload Data" width="250"/>
 
-<img src="createnotebook_2.png" alt="Upload Data" width="400"/>
+<img src="createnotebook_2.png" alt="Upload Data" width="250"/>
 
 ### Packages
 The notebook makes use of the `plotly` and the `snowflake-ml-python` packages we need to enter those in the package list of the notebook first.
 
 
-<img src="packages.png" alt="Upload Data" width="400"/>
+<img src="packages.png" alt="Upload Data" width="250"/>
 
 
 
