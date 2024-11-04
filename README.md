@@ -60,14 +60,48 @@ We can now upload the `carprice_prediction_snowflake_notebook.ipynb` in this rep
 1. Click + Create
 2. Select Notebookk > Import *.ipynb file 
 
-<img src="images\createnotebook.png" alt="Upload Data" width="250"/>
+<img src="images\createnotebook.png" alt="create notebook" width="250"/>
 
-<img src="images\createnotebook_2.png" alt="Upload Data" width="250"/>
+<img src="images\createnotebook_2.png" alt="create notebook" width="250"/>
 
 
 ### 2. Via Git integration in Snowflake
 
-to be filled....
+Snowflake allows you to clone git repositories from github or gitlab. In order to thatwe first need to create an API integration and the using that api integration, we can clone a repository (into a data base).
+
+1. Click on the '+ CREATE' button 
+2. Select SQL worksheet 
+3. Select the database `CARS_DATA` and `PUBLIC` schema
+3. In that new worksheet type in and run:
+
+```sql
+CREATE or REPLACE api integration git_api_integration
+    api_provider = git_https_api
+    api_allowed_prefixes = ('https://github.com/longhowlam/')
+    enabled = true
+    allowed_authentication_secrets = all
+;
+```
+
+Run the above command to create an api integration, then we can clone this repo
+
+```sql
+CREATE OR REPLACE GIT REPOSITORY cars_prediction
+    API_INTEGRATION = git_api_integration
+    ORIGIN = 'https://github.com/longhowlam/snowflake_cars_prediction.git'
+;
+```
+
+Now you should see the repo in your snowflake account, see a screenshot in the figure below.
+
+<img src="images\gitrepo.png" alt="git repo" width="350"/>
+
+Form there you can create the notebook in your snwoflake account by clicking on the three dots
+
+<img src="images\gitrepo2.png" alt="create notebook" width="400"/>
+
+
+
 
 ## Packages used by botebook
 
