@@ -1,4 +1,4 @@
-# Demo machine learning with snowflake snopwarkwpark
+# Demo machine learning with snowflake snowpark
 
 ## Introduction
 
