@@ -42,14 +42,10 @@ Now that we have a database, we can populate it with tables, one way is to uploa
 4. Use the "Load Data" option to upload the `car_prices.csv` file.
 
 Here are some screenshot of the upload process:
-<style>
-  img {
-    border: 2px solid #ccc; /* Adjust these values for border style, width, and color */
-  }
-</style>
 
 
-<img src="images\upload_data.png" alt="Upload Data" width="600"/>
+
+<img src="images\upload_data.png" alt="Upload Data" width="600" style="border: 2px solid black;"/>
 
 <img src="images\upload_data_2.png" alt="Upload Data" width="600"/>
 
