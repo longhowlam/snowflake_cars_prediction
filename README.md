@@ -1,8 +1,13 @@
 # Demo snowflake notebook on snowpark ML
 
-## Intro
+## Introduction
 
-This repo contains some info, a data set and a notebook demonstrating the use of [snowpark ML](https://docs.snowflake.com/en/developer-guide/snowflake-ml/overview). We'll train a machine learning model using a snowpark ML pipeline and register that pipeline in the snowpark model registery. The model can then be used for scoring new data.
+This repo contains some info to 
+* setup snowflake (for machine learning), 
+* an example cars data set
+* a notebook demonstrating the use of [snowpark ML](https://docs.snowflake.com/en/developer-guide/snowflake-ml/overview). 
+
+We'll train a machine learning model using a snowpark ML pipeline and register that pipeline in the snowpark model registery. The model can then be used for scoring new data. See the `carprice_prediction_snowflake_notebook.ipynb` notebook for more details.
 
 ## Setup account
 
@@ -34,32 +39,32 @@ Now that we have a database, we can populate it with tables, one way is to uploa
 
 Here are some screenshot of the upload process:
 
-<img src="upload_data.png" alt="Upload Data" width="600"/>
+<img src="images\upload_data.png" alt="Upload Data" width="600"/>
 
-<img src="upload_data_2.png" alt="Upload Data" width="600"/>
+<img src="images\upload_data_2.png" alt="Upload Data" width="600"/>
 
-<img src="upload_data_3.png" alt="Upload Data" width="600"/>
+<img src="images\upload_data_3.png" alt="Upload Data" width="600"/>
 
 When the data is uploaded you can view the car_price data in the snowflake interface
 
-<img src="cars_data.png" alt="car price Data" width="600"/>
+<img src="images\cars_data.png" alt="car price Data" width="600"/>
 
 
 ## Notebook
 
-We can now upload the carprice_prediction_snowflake_notebook in this repository to snowflake. From the snowflake homepage:
+We can now upload the `carprice_prediction_snowflake_notebook.ipynb` in this repository to snowflake. From the snowflake homepage:
 1. Click + Create
 2. Select Notebookk > Import *.ipynb file 
 
-<img src="createnotebook.png" alt="Upload Data" width="250"/>
+<img src="images\createnotebook.png" alt="Upload Data" width="250"/>
 
-<img src="createnotebook_2.png" alt="Upload Data" width="250"/>
+<img src="images\createnotebook_2.png" alt="Upload Data" width="250"/>
 
 ### Packages
 The notebook makes use of the `plotly` and the `snowflake-ml-python` packages we need to enter those in the package list of the notebook first.
 
 
-<img src="packages.png" alt="Upload Data" width="250"/>
+<img src="images\packages.png" alt="Upload Data" width="250"/>
 
 
 
