@@ -27,8 +27,9 @@ CREATE DATABASE CARS_DATA;
 
 ## Get the data and the notebook into snowflake
 
+There are two ways to get the CSV data set and the notebook in this repo into your snowflake environment. 
 
-###  Manually 
+###  1. Manually uploads 
 
 #### Upload Data
 
@@ -64,7 +65,7 @@ We can now upload the `carprice_prediction_snowflake_notebook.ipynb` in this rep
 <img src="images\createnotebook_2.png" alt="Upload Data" width="250"/>
 
 
-### Via Git integration in Snowflake
+### 2. Via Git integration in Snowflake
 
 to be filled....
 
