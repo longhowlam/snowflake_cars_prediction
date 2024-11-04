@@ -27,7 +27,7 @@ CREATE DATABASE CARS_DATA;
 
 ## Get the data and the notebook into snowflake
 
-There are two ways to get the CSV data set and the notebook in this repo into your snowflake environment. 
+There are two ways to get the CSV data set and the notebook in this repo into your snowflake environment. 1. manualy upload the data and the notebook, or 2 via git integration.
 
 ###  1. Manually uploads 
 
@@ -96,11 +96,11 @@ Now you should see the repo in your snowflake account, see a screenshot in the f
 
 <img src="images\gitrepo.png" alt="git repo" width="350"/>
 
-Form there you can create the notebook in your snwoflake account by clicking on the three dots
+Form there you can create the notebook in your snwoflake account by clicking on the three dots.
 
 <img src="images\gitrepo2.png" alt="create notebook" width="400"/>
 
-
+A dialog will appear where you can set the notebook runtime, and then you will see the notebook appear as a natibe snowflake notebook inside your snowflake environment. The notebook environment includes the `car_prices.csv` data set. This can be imported with pandas in the notebook and then the data can be put in a snowflake database with snowpark stateents. See notebook.
 
 
 ## Packages used by botebook
